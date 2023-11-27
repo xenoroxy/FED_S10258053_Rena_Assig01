@@ -196,13 +196,13 @@ section {
   color: rgb(107, 67, 16);
 }
 #bespoke form {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto;
 }
 
 #bespoke .form-group {
-  display: flex;
-  flex-wrap: wrap;
   flex: 1;
   padding: 50px;
   margin-right: 20px;

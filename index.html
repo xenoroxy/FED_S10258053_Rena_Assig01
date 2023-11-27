@@ -43,13 +43,13 @@
     </div>
     <div class="product">
         <img id="images/bowl" src="images/bowl.jpeg" alt="Bowl" 
-        onmouseover="hoverImage('images/bowl')" onmouseout="resetImage('images/bowl')">
+        onmouseover="hoverImage('images/bowl')" onmouseout="resetImage('bowl')">
         <p id="bowls">Our handmade ceramic donburi bowl is designed to be versatile for every meal.</p>
         <p>$59.90</p>
     </div>
     <div class="product">
         <img id="images/vase" src="images/vase.jpeg" alt="Vase"
-        onmouseover="hoverImage('images/vase')" onmouseout="resetImage('images/vase')">
+        onmouseover="hoverImage('images/vase')" onmouseout="resetImage('vase')">
         <p id="vases">Handcrafted to place your flowers to enhance your home.</p>
         <p>$99.90</p>
     </div>
@@ -89,6 +89,7 @@
             <h2>Please fill up the form</h2>
         </div>
 
+        <div class="form-group">
             <label for="firstname">First Name</label>
             <input type="text" id="firstname" name="firstname" required>
 
@@ -97,7 +98,9 @@
 
             <label for="email">EMAIL ADDRESS</label>
             <input type="text" id="email" name="email" required>
+        </div>
 
+        <div class="form-group">
             <label for="product">Type of product</label>
             <select name="product" id="product">
                 <option value="plate">Plate</option>
