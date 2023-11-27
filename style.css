@@ -82,7 +82,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.09),rgba(0, 0, 0, 0.5)) ,url(home-wallpaper.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.09),rgba(0, 0, 0, 0.5)) ,url(images/home-wallpaper.jpeg);
   background-size: cover;
   background-attachment: fixed; 
 }
@@ -112,8 +112,6 @@ section {
 #products {
   background-color: white;
 }
-
-/*testing*/
 
 #products img {
   max-width: 100%;
@@ -169,7 +167,7 @@ section {
   min-width: 100vw;
   display: flex;
   justify-content: end;
-  background-image: url('services-bg.jpg'), url('custom-bg.jpg');
+  background-image: url('images/services-bg.jpg'), url('images/custom-bg.jpg');
   background-position: left top, right top;
   background-repeat: no-repeat, no-repeat;
   background-size: 50% 100%, 50% 100%;
