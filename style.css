@@ -9,7 +9,29 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+@media (min-width: 320px){
+  body{
+    font-size: 16px;
+  }
+}
 
+@media (min-width: 768px){
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px){
+  body {
+    font-size: 19px;
+  }
+}
+
+@media (min-width:1280px){
+  body{
+    font-size: 20px;
+  }
+}
 /*nav bar*/
 .navbar {
   display:flex;
@@ -34,15 +56,6 @@ body {
 .navbar a:hover{
   color: black; 
 }
-
-@media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-      width: 100%;
-      text-align: left; 
-    }
-  }
 
   /*scroll down button*/
 .button {
@@ -242,53 +255,3 @@ section {
   background-color: rgb(151, 126, 93);
 }
 
-
-@media only screen and (max-width: 600px) {
-  body {
-      font-size: 10px;
-  }
-
-  .navbar {
-      width: 100%;
-      text-align: center;
-  }
-
-  .navbar a {
-      float: none;
-      width: 100%;
-  }
-
-  .button {
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 5%;
-  }
-
-  section {
-      padding-top: 30px;
-  }
-
-  #about img {
-      height: auto;
-      max-width: 100%;
-  }
-
-  #info {
-      padding: 20px;
-      padding-left: 10px;
-      padding-right: 10px;
-  }
-
-  #services .left, #services .right {
-      padding: 20px;
-  }
-
-  #bespoke .form-group {
-      padding: 20px;
-      margin-right: 0;
-  }
-
-  #bespoke button {
-      width: 100%;
-  }
-}
