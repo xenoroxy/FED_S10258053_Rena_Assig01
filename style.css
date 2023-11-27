@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Julius Sans One', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/*nav bar*/
+.navbar {
+  display:flex;
+  width: 100vw;
+  background-color: rgb(144, 130, 110);
+  position:fixed;
+  top: 0;
+  overflow:hidden;
+  z-index: 2;
+}
+  
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  width: 18%; 
+  text-align: center; 
+}
+
+.navbar a:hover{
+  color: black; 
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; 
+    }
+  }
+
+  /*scroll down button*/
+.button {
+  border-radius: 20px;
+  padding: 8px;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 8%;
+  background: #ccc;
+}
+  
+.button__arrow {
+  background-color: transparent;
+  height: 12px;
+  width: 12px;
+}
+  
+.button__arrow--down {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  border-right: 3px solid rgba(0, 0, 0, 0.3);
+  transform: translateY(-25%) rotate(45deg);
+}
+
+  /*body*/
+section {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-top: 50px;
+  display: flex;
+}
+
+/*home page (first page)*/
+#home{
+  color:white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.09),rgba(0, 0, 0, 0.5)) ,url(home-wallpaper.jpeg);
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+/*products*/
+
+#products {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: #fff;
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.product img {
+  max-width: 100%;
+  height: 60vh;
+}
+
+#products {
+  background-color: white;
+}
+
+/*testing*/
+
+#products img {
+  max-width: 100%;
+  height: 60vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+#products img:hover {
+  transform: scale(1.1);
+}
+
+
+/*about us (second page)*/
+#about-us {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#pottery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+}
+
+#info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  padding: 135px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+}
+
+#info a{
+  text-decoration: none;
+  color: grey;
+}
+
+/*services*/
+
+#services {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: end;
+  background-image: url('services-bg.jpg'), url('custom-bg.jpg');
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50% 100%, 50% 100%;
+}
+
+#services .left,.right {
+  text-align: center;
+  width: 50%;
+  padding: 230px;
+  color: white;
+}
+
+#services a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  border: 1px solid white;
+}
+
+/*bespoke*/
+#bespoke {
+  background-color: #ebebeb;
+}
+
+#bespoke h1 {
+  color: rgb(107, 67, 16);
+}
+#bespoke form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#bespoke .form-group {
+  flex: 1;
+  padding: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#bespoke select {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+#bespoke label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#bespoke input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+#bespoke textarea {
+  resize: vertical;
+}
+
+#bespoke button {
+  background-color:tan;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#bespoke button:hover {
+  background-color: rgb(151, 126, 93);
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 10px;
+  }
+
+  .navbar {
+      width: 100%;
+      text-align: center;
+  }
+
+  .navbar a {
+      float: none;
+      width: 100%;
+  }
+
+  .button {
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 5%;
+  }
+
+  section {
+      padding-top: 30px;
+  }
+
+  #about img {
+      height: auto;
+      max-width: 100%;
+  }
+
+  #info {
+      padding: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  #services .left, #services .right {
+      padding: 20px;
+  }
+
+  #bespoke .form-group {
+      padding: 20px;
+      margin-right: 0;
+  }
+
+  #bespoke button {
+      width: 100%;
+  }
+}

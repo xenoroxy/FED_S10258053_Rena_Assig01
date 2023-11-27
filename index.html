@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PotteryWorks</title>
+    <link rel="stylesheet" href="style.css">       
+</head>
+
+<body> 
+    <header>
+        <div class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#products">PRODUCTS</a>
+            <a href="#about-us">ABOUT US</a>            
+            <a href="#services">SERVICES</a>
+            <a href="#bespoke">BESPOKE</a>
+        </div>
+    </header>
+
+<section id="home">
+    <div class="vision">
+        <h1>OUR VISION</h1>
+        <p>"Handmade with the heart and soul, to bring nature's beauty into our everyday lives."</p>
+
+        <a href="#scroll" class="button">
+        <div class="button__arrow button__arrow--down"></div>
+        </a>
+    </div>
+</section>
+
+<div id="scroll" class="rest"></div> 
+<section id="products">
+    <div class="product">
+        <img id="plate" src="plate.jpeg" alt="Plate" 
+        onmouseover="hoverImage('plate')" onmouseout="resetImage('plate')">
+        <p id="plates">Adds a simple touch to your dinner table.</p>
+        <p>$39.90</p>
+    </div>
+    <div class="product">
+        <img id="cup" src="cup.jpeg" alt="Cup" 
+        onmouseover="hoverImage('cup')" onmouseout="resetImage('cup')">
+        <p id="cups">A handmade ceramic cup for your daily beverage needs.</p>
+        <p>$29.90</p>
+    </div>
+    <div class="product">
+        <img id="bowl" src="bowl.jpeg" alt="Bowl" 
+        onmouseover="hoverImage('bowl')" onmouseout="resetImage('bowl')">
+        <p id="bowls">Our handmade ceramic donburi bowl is designed to be versatile for every meal.</p>
+        <p>$59.90</p>
+    </div>
+    <div class="product">
+        <img id="vase" src="vase.jpeg" alt="Vase"
+        onmouseover="hoverImage('vase')" onmouseout="resetImage('vase')">
+        <p id="vases">Handcrafted to place your flowers to enhance your home.</p>
+        <p>$99.90</p>
+    </div>
+</section>   
+
+<section id="about-us">
+    <div id="about">
+        <img id="pottery" src="pottery-img.jpg">
+        <div id="info">
+            <h1>ABOUT US</h1>
+            <p>Inspired by Japanese meals, our work celebrates the beauty of simplicity and balanced life. Unlike your usual set up, PotteryWorks proviides a variety of creations to brighten up your home.</p>
+            <a href="#">Read more --></a>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="left">
+        <h1>MAKE IT YOUR OWN</h1>
+        <hr>
+        <p>Make an appointment to visit our Studio. Discover one-of-a-kind items, previews of upcoming collections, chat with the team and enjoy the full sensory experience</p>
+        <a href="#bespoke"> MAKE A BOOKING</a>
+    </div>
+    <div class="right">
+        <h1>CUSTOMISE OUR GOODS</h1>
+        <hr>
+        <p>Make it personal, make it custom.</p>
+        <a href="#bespoke">CONTACT US</a>
+    </div>
+</section>
+
+<section id="bespoke">
+    <form action="/submit_form" method="post"></form>
+        <div class="form-group">
+            <h1>INQUIRY FORM</h1>
+            <hr>
+            <h2>Please fill up the form</h2>
+        </div>
+
+        <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="email">EMAIL ADDRESS</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="product">Type of product</label>
+            <select name="product" id="product">
+                <option value="plate">Plate</option>
+                <option value="cup">Cup</option>
+                <option value="bowl">Bowl</option>
+                <option value="vase">Vase</option>
+            </select>
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="8" required></textarea>
+
+            <label for="request">Request</label>
+            <textarea id="request" name="request" rows="8" required></textarea>
+            
+            <button type="submit">Submit</button>            
+        </div>    
+    </form>
+</section>
+
+<footer>
+    <p>Contact: +65 9327 4372</p>
+    <p>Email: PotteryWorks@gmail.com</p>
+    <p>Shop Address: 427 Street, RedHill</p>
+    <p>&copy; 2023 PotteryWorks</p>
+  </footer>
+
+<script src="code.js"></script>
+</body>
+</html>
