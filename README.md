@@ -1,10 +1,10 @@
 # FED_S10258053_Rena_Assig01
 # Build a website for a fictional company (hand crafted pottery)
 ## External user’s goal:
-The site’s users are your potential customers, looking for information about your services or product
+The site’s users are potential customers, looking for information about the shops' services or product
 
 ### Site owner’s goal:
-Showcase company’s works and good reviews to put the company in a good light to win over customers.
+Showcase shops' works and good reviews to put the shop in a good light to win over customers.
 
 #### Features to include:
 -   Product details (products)
