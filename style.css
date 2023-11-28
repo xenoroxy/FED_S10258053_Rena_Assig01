@@ -9,27 +9,27 @@ body {
   margin: 0;
   min-height: 100vh;
 }
-@media (min-width: 320px){
+@media (min-width: 375px){
   body{
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
 @media (min-width: 768px){
   body {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 1024px){
   body {
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 
 @media (min-width:1280px){
   body{
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 /*nav bar*/
@@ -189,7 +189,7 @@ section {
 #services .left,.right {
   text-align: center;
   width: 50%;
-  padding: 230px;
+  padding-top: 250px;
   color: white;
 }
 
@@ -203,6 +203,9 @@ section {
 /*bespoke*/
 #bespoke {
   background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #bespoke h1 {
@@ -217,9 +220,15 @@ section {
 
 #bespoke .form-group {
   flex: 1;
-  padding: 50px;
+  padding: 0;
   margin-right: 20px;
-  margin-bottom: 20px;
+  min-width: 50%;
+}
+
+.form-groups {
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
 }
 
 #bespoke select {
@@ -254,4 +263,5 @@ section {
 #bespoke button:hover {
   background-color: rgb(151, 126, 93);
 }
+
 

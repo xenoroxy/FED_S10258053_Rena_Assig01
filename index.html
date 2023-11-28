@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>PotteryWorks</title>
     <link rel="stylesheet" href="style.css">       
 </head>
@@ -82,41 +83,42 @@
 </section>
 
 <section id="bespoke">
-    <form action="submit_form" method="post"></form>
-        <div class="form-group">
-            <h1>INQUIRY FORM</h1>
-            <hr>
-            <h2>Please fill up the form</h2>
-        </div>
-
-        <div class="form-group">
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" required>
-
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" required>
-
-            <label for="email">EMAIL ADDRESS</label>
-            <input type="text" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-            <label for="product">Type of product</label>
-            <select name="product" id="product">
-                <option value="plate">Plate</option>
-                <option value="cup">Cup</option>
-                <option value="bowl">Bowl</option>
-                <option value="vase">Vase</option>
-            </select>
-            <label for="description">Description</label>
-            <textarea id="description" name="description" rows="8" required></textarea>
-
-            <label for="request">Request</label>
-            <textarea id="request" name="request" rows="8" required></textarea>
+            <form action="submit_form" method="post">
+                <div class="form-group">
+                    <h1>INQUIRY FORM</h1>
+                    <hr>
+                    <h2>Please fill up the form</h2>
+                </div>
+                <div class= "form-groups">
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" required>
             
-            <button type="submit">Submit</button>            
-        </div>    
-    </form>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" required>
+            
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="product">Type of product</label>
+                        <select name="product" id="product">
+                            <option value="plate">Plate</option>
+                            <option value="cup">Cup</option>
+                            <option value="bowl">Bowl</option>
+                            <option value="vase">Vase</option>
+                        </select>
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="8" required></textarea>
+            
+                        <label for="request">Request</label>
+                        <textarea id="request" name="request" rows="8" required></textarea>
+                        
+                        <button type="submit">Submit</button>            
+                    </div>    
+            </form>
+                </div>
 </section>
 
 <footer>
