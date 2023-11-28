@@ -6,7 +6,7 @@ The site’s users are your potential customers, looking for information about y
 ### Site owner’s goal:
 Showcase company’s works and good reviews to put the company in a good light to win over customers.
 
-#### Features to include:**
+#### Features to include:
 -   Product details (products)
 -   Categories
 -   Fictional record and testimonies (about us)
@@ -21,7 +21,7 @@ Showcase company’s works and good reviews to put the company in a good light t
  -  Email 
  -  Address 
 
-##### Javascript features**
+##### Javascript features
 -   enlarge and change image on hover
 -   Mouse over interactions 
 -   Scrolling interactions
