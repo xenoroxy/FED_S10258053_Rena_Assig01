@@ -57,6 +57,7 @@ body {
   color: black; 
 }
 
+
   /*scroll down button*/
 .button {
   border-radius: 20px;
@@ -81,11 +82,10 @@ body {
   transform: translateY(-25%) rotate(45deg);
 }
 
-  /*body*/
+/*body*/
 section {
   min-width: 100vw;
   min-height: 100vh;
-  padding-top: 50px;
   display: flex;
 }
 
@@ -103,6 +103,7 @@ section {
 /*products*/
 
 #products {
+  padding-top: 50px;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -160,7 +161,7 @@ section {
   width: 100%;
   box-sizing: border-box;
   padding-top: 500px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
   padding-left: 200px;
   padding-right: 200px;
   text-align: center;
@@ -277,5 +278,6 @@ section {
 #bespoke button:hover {
   background-color: rgb(151, 126, 93);
 }
+
 
 
